@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation-Layer", "1 - Presentation-Layer", "{F87B153C-B054-4F12-B46C-230168AED15D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure-Layer", "3 - Infrastructure-Layer", "{F41524B9-CA89-485C-9D25-B319FA7E8C14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain-Layer", "2 - Domain-Layer", "{F1ACB00E-D4AC-46A0-A580-1C47EE6958ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartContractEthereum.Infrastructure.Data", "Infrastructure-Layer\Data\SmartContractEthereum.Infrastructure.Data\SmartContractEthereum.Infrastructure.Data.csproj", "{FAB2726E-FE62-4A92-9514-502C99DBF203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartContractEthereum.Domain", "Domain-Layer\SmartContractEthereum.Domain\SmartContractEthereum.Domain.csproj", "{8A5D1F33-0BF3-418E-AB2F-22F2807880DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartContractEthereum.Presentation.Manager", "Presentation-Layer\SmartContractEthereum.Presentation.Manager\SmartContractEthereum.Presentation.Manager.csproj", "{CC2D5243-9917-4C42-96A0-23B81F695864}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAB2726E-FE62-4A92-9514-502C99DBF203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB2726E-FE62-4A92-9514-502C99DBF203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB2726E-FE62-4A92-9514-502C99DBF203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB2726E-FE62-4A92-9514-502C99DBF203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A5D1F33-0BF3-418E-AB2F-22F2807880DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A5D1F33-0BF3-418E-AB2F-22F2807880DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A5D1F33-0BF3-418E-AB2F-22F2807880DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A5D1F33-0BF3-418E-AB2F-22F2807880DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC2D5243-9917-4C42-96A0-23B81F695864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2D5243-9917-4C42-96A0-23B81F695864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2D5243-9917-4C42-96A0-23B81F695864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC2D5243-9917-4C42-96A0-23B81F695864}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FAB2726E-FE62-4A92-9514-502C99DBF203} = {F41524B9-CA89-485C-9D25-B319FA7E8C14}
+		{8A5D1F33-0BF3-418E-AB2F-22F2807880DE} = {F1ACB00E-D4AC-46A0-A580-1C47EE6958ED}
+		{CC2D5243-9917-4C42-96A0-23B81F695864} = {F87B153C-B054-4F12-B46C-230168AED15D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC461718-9728-4E49-B94C-5FF0D8C3877A}
+	EndGlobalSection
+EndGlobal

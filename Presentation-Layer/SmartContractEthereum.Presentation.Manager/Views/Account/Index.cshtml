@@ -1,0 +1,52 @@
+﻿@model PagedList.IPagedList<SmartContractEthereum.Domain.Entities.Manager.Account>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Lista";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lista Contas</h2>
+
+<p>
+    @Html.ActionLink("Criar Novo", "Create")
+</p>
+
+<div class="table-custom">
+    <table>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Login)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Created)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Updated)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Login)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Created)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Updated)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Deletar", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
+    Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))

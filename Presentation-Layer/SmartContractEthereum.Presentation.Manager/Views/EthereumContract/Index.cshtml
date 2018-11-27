@@ -1,0 +1,47 @@
+﻿@model PagedList.IPagedList<SmartContractEthereum.Presentation.Manager.Models.EthereumContract.EthereumContractViewModel>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Lista";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lista Contratos Ethereum</h2>
+
+@using (Html.BeginForm())
+{
+    <input class="form-control custom" type="text" id="cpf" placeholder="Nome" name="Name">
+
+    <input type="submit" class="btn btn-default" id="btn-buscar" value="Buscar" />
+}
+
+<div class="table-custom">
+    <table>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ContractID)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContractID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Created)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.ID }) |
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
+Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.currentSort, asc = ViewBag.asc, status = ViewBag.status }), PagedListRenderOptions.ClassicPlusFirstAndLast)
+Mostrando @Model.FirstItemOnPage para @Model.LastItemOnPage de @Model.TotalItemCount registros.
+

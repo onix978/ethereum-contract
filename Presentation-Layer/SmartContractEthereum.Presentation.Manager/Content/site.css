@@ -1,0 +1,121 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content-index {
+    width: 80%;
+    margin: 0px auto;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select {
+    max-width: 280px;
+}
+
+textarea {
+    max-width: 280px;
+    width: 100%;
+    height: 138px;
+}
+
+.table-custom {
+    overflow: auto;
+    margin: 20px 0px;
+    font-family: Trebuchet MS, Ubuntu, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.42857143;
+}
+
+    .table-custom th {
+        text-align: unset;
+        font-size: 14px;
+        padding: 10px 20px;
+        white-space: nowrap;
+    }
+
+    .table-custom td {
+        padding: 10px 20px;
+        white-space: nowrap;
+    }
+
+    .table-custom.cep{
+        width: 50% !important;
+    }
+
+.form-control.custom {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.form-control.custom.cep {
+    width: 80%;
+    margin: 15px 16% 0px 0px !important;
+    float: left;
+}
+
+.login-content {
+    margin-left: 15%;
+}
+
+.status-style {
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: #4479BA;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 6px 12px !important;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.body-content-index h2 {
+    line-height: 35px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+.btn.btn-default:hover {
+    border: 0px;
+}
+.form-control {
+    background: transparent;
+    border: 0px;
+    box-shadow: none;
+    border-bottom: 2px solid #cdd1d5;
+    background-color: transparent;
+    border-radius: 0px;
+    font-size: 16px;
+}
+.form-control:focus {
+    border-bottom: 2px solid #1f376d;
+}
+
+.ethereumContract{
+    min-width: 280px;
+    border: 3px solid;
+    padding: 25px;
+    margin: 25px;
+    float: left;
+    min-height: 150px
+}
