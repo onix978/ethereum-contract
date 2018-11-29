@@ -21,22 +21,43 @@
             <th>
                 @Html.DisplayNameFor(model => model.First().ContractID)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Account.EthereumAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Account.Login)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Created)
+            </th>
             <th></th>
         </tr>
 
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ContractID)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Created)
-                </td>
-                <td>
-                    @Html.ActionLink("Editar", "Edit", new { id = item.ID }) |
-                </td>
-            </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContractID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Account.EthereumAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Account.Login)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Created)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.ID }) |
+            </td>
+        </tr>
         }
     </table>
 </div>

@@ -54,9 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mapping\Manager\AccountMap.cs" />
-    <Compile Include="Migrations\201811270157152_InitialDatabase.cs" />
-    <Compile Include="Migrations\201811270157152_InitialDatabase.Designer.cs">
-      <DependentUpon>201811270157152_InitialDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\201811272301085_InitialDatabase.cs" />
+    <Compile Include="Migrations\201811272301085_InitialDatabase.Designer.cs">
+      <DependentUpon>201811272301085_InitialDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\CustomSqlServerMigrationSqlGenerator.cs" />
@@ -85,8 +85,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811270157152_InitialDatabase.resx">
-      <DependentUpon>201811270157152_InitialDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811272301085_InitialDatabase.resx">
+      <DependentUpon>201811272301085_InitialDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
